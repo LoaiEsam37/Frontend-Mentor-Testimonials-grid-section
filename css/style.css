@@ -133,5 +133,12 @@ img.quotation {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 15px 12% 15px 12%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        margin: 15px;
     }
 }
