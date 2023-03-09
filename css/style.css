@@ -103,7 +103,8 @@ h1 {
     width: 200px;
 }
 
-.card__username h3 {
+.card__username h2 {
+    font-size: 10px;
     color: #95a2b5;
 }
 
