@@ -23,6 +23,10 @@ h1 {
     font-size: 10px;
 }
 
+p {
+    color: #818286;
+}
+
 .card {
     border-radius: 5px;
     position: relative;
