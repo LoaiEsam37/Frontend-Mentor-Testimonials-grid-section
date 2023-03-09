@@ -11,9 +11,12 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(5, 240px);
-    grid-template-rows: repeat(2, fit-content);
+    grid-template-columns: repeat(5, minmax(auto, 240px));
+    grid-template-rows: repeat(auto-fill, fit-content);
     gap: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 1150px;
 }
 
 h1 {
@@ -21,7 +24,7 @@ h1 {
 }
 
 .card {
-    border-radius: 8px;
+    border-radius: 5px;
     position: relative;
     -webkit-box-shadow: 20px 13px 53px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 20px 13px 53px -20px rgba(0, 0, 0, 0.75);
@@ -114,10 +117,20 @@ img.quotation {
     position: absolute;
     top: 0%;
     left: 75%;
+    transform: translateX(-25%);
     z-index: 1;
 }
 
 .card__content span {
     position: relative;
     z-index: 2;
+}
+
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
